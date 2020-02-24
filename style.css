@@ -1,0 +1,159 @@
+body {
+  background-color: paleturquoise;
+  font-family: "oxygen";
+  font-size: 16px;
+  color: midnightblue;
+}
+
+h1 {
+    font-family: "Roboto";
+    font-size: 50px;
+}
+
+h2 {
+    margin: 50px auto;
+    width: 80%;
+    font-size: 22px;
+    line-height: 35px;
+}
+
+p {
+    line-height: 25px;
+}
+
+nav {
+    background-color: midnightblue;
+    position: fixed;
+    width: 100%;
+    margin: auto;
+}
+
+ul {
+    padding: 15px;
+    margin: 0px;
+}
+
+li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.active-link {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: mintcream;
+}
+
+nav a {
+    text-decoration: none;
+    color: paleturquoise;
+}
+
+.navfix {
+    height: 60px;
+}
+
+.container1 {
+    margin: 100px 200px;
+    width: 1050px;
+    padding: 20px;
+}
+
+.intro2 {
+    display: inline-block;
+}
+
+.intro2 img {
+    width: 85%;
+    margin: 15px 0px;
+}
+
+#img_portrait1 {
+    width: 30%;
+}
+
+#p1 {
+    text-align: justify;
+    position: absolute;
+    width: 730px;
+}
+
+#p2 {
+    margin-bottom: 150px;
+    text-align: justify;
+}
+
+.container2 {
+    margin: auto;
+}
+
+.clearfix {
+    clear: both;
+    height: 20px;;
+}
+
+.section {
+    float: left;
+    min-height: 400px;
+    width: 33.333%;
+}
+
+.section img {
+    width: 90%;
+    margin-right: 25px;
+}
+
+.contact_page {
+    margin: 200px auto;
+    text-align: center;
+    width: 600px;
+}
+
+.contact_page img {
+    width: 95%;
+    height: auto;
+    padding-bottom: 50px;
+}
+
+form {
+    margin-top: 25px;
+}
+
+.f-name,.l-name,.e-input,.s-input,.m-input {
+    display: block;
+    width: 75%;
+    height: 30px;
+    margin: 0px auto 15px;
+    margin-bottom: 15px;
+    padding: 0px 10px;
+    font-family: 'oxygen';
+}
+
+.m-input {
+    height: 250px;
+    padding: 10px;
+}
+
+.button>form>input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-family: 'oxygen';
+    background-color: midnightblue;
+    color: paleturquoise;
+}
+
+.ty {
+    margin: 200px auto;
+    text-align: center;
+    width: 1050px;
+}
+
+.ty img {
+    width: 100%;
+    padding-top: 75px;
+}
