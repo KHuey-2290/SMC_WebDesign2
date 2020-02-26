@@ -94,7 +94,7 @@ nav a {
 
 .clearfix {
     clear: both;
-    height: 20px;;
+    height: 20px;
 }
 
 .section {
@@ -110,7 +110,7 @@ nav a {
 
 .contact_page {
     margin: 200px auto;
-    text-align: center;
+    align-content: center;
     width: 600px;
 }
 
@@ -122,6 +122,11 @@ nav a {
 
 form {
     margin-top: 25px;
+}
+
+label {
+    padding-left: 60px;
+    text-align: left;
 }
 
 .f-name,.l-name,.e-input,.s-input,.m-input {

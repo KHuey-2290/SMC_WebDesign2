@@ -25,15 +25,20 @@
     <h2>To contact Chihuly Studios, please fill out and submit the form below.</h2>
 
     <form action="action_page.php" method="POST">
-      <input type="text" class="f-name" name="firstname" placeholder="First Name">
+      <label for="fn">First Name</label>
+      <input type="text" class="f-name" id="fn" name="firstname" placeholder="First Name">
                         
-      <input type="text" class="l-name" name="lastname" placeholder="Last Name">
+      <label for="ln">Last Name</label>
+      <input type="text" class="l-name" id="ln" name="lastname" placeholder="Last Name">
   
-      <input type="email" name="email" class="e-input" id="EmailAddress" placeholder="Email Address">
+      <label for="ea">Email Address</label>
+      <input type="email" name="email" class="e-input" id="ea" id="EmailAddress" placeholder="Email Address">
 
-      <input type="text" class="s-input" name="subject" placeholder="Subject">
+      <label for="sb">Subject</label>
+      <input type="text" class="s-input" id="sb" name="subject" placeholder="Subject">
   
-      <textarea class="m-input" name="message" placeholder="Write your message here..."></textarea>
+      <label for="mb">Message</label>
+      <textarea class="m-input" id="mb" name="message" placeholder="Write your message here..."></textarea>
     </form>
 
     <div class="button" id="submit-button">
