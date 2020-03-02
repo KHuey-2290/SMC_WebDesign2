@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 
     <title>My First Responsive Site!</title>
@@ -13,20 +14,22 @@
 <body>
     <header>
         <nav>
-            <img src="Assets/KH_Logo2.jpg" class="logo" alt="brand logo" id="imgnavlogo">
+            <img src="Assets/KH_Logo.jpg" class="logo" alt="brand logo" id="imgnavlogo">
 
             <label for="toggleAssist">
-                <img src="Assets/hamburger_navbar.jpg" class="toggle-button" alt="navbar toggle button">
+                <img src="Assets/hamburger_navbar.jpg" class="toggle-button" alt="navbar toggle button" id="hamnav">
             </label>
             <input type="checkbox" class="checkbox1" id="toggleAssist">
 
             <ul class="nav-links">
-                <li> <a href="boop">Orange</a> </li>
+                <li> <a class="active-link" href="index.html">Orange</a> </li>
                 <li> <a href="boop">Apple</a> </li>
                 <li> <a href="boop">Grape</a> </li>
                 <li> <a href="boop">Banana</a> </li>
             </ul>
         </nav>
+
+        <div class="navfix"></div>
 
     </header>
 
