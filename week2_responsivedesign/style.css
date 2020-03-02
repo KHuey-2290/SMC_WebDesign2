@@ -1,1 +1,35 @@
 /* First responsive site */
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar small screens */
+
+#toggleAssist, ul.nav-links {
+    display: none;
+}
+
+#toggleAssist:checked + ul.nav-links {
+    display: block;
+}
+
+/* Navbar l;arger screens */
+
+@media (min-width: 768px) {
+    .toggle-button {
+        display: none;
+    }
+
+    ul.nav-links {
+        display: block;
+        float: right;
+    }
+
+    .nav-links li {
+        display: inline-block;
+        padding: 10px;
+        border-bottom: none;
+    }
+}
