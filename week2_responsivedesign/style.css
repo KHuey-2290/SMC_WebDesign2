@@ -1,9 +1,23 @@
-/* First responsive site */
+/* First responsive site; begin with responsive small phone screens */
 body {
     margin: 0px;
     background-color: rgb(250, 240, 230);
     color: rgb(7, 7, 78);
     font-family: 'Raleway';
+}
+
+.logo {
+    width: 60px;
+    margin: 20px;
+}
+
+.header1 {
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    font-size: 18px;
+    vertical-align: top;
+    margin: 20px auto 0px;
 }
 
 nav {
@@ -28,47 +42,6 @@ nav a {
 a:hover {
     color: chocolate;
 }
-
-.logo {
-    width: 60px;
-    padding: 20px;
-}
-
-ul {
-    padding: 20px;
-    margin: 0px;
-}
-
-ul.header1 {
-    text-align: center;
-    display: inline-block;
-    width: 100px;
-    font-size: 22px;
-    vertical-align: top;
-}
-
-li {
-    display: inline-block;
-    padding: 20px 0px;
-}
-
-.navfix {
-    height: 100px;
-}
-
-.container1 {
-    background-color: rgb(7, 7, 78);
-    height: 1000px;
-    width: 50%;
-    margin: 100px auto;
-}
-
-/* Responsive small phone screens */
-#hamnav {
-    width: 30px;
-    float: right;
-    padding: 15px;
-}
     
 #toggleAssist, ul.nav-links {
     display: none;
@@ -82,12 +55,50 @@ li {
     background-color: rgb(250, 240, 230);
 }
 
+ul {
+    padding: 0px 20px;
+    margin: 0px;
+}
+
+li {
+    display: inline-block;
+    padding: 20px 0px;
+}
+
+#hamnav {
+    width: 30px;
+    float: right;
+    margin: 15px;
+}
+
+.navfix {
+    height: 100px;
+}
+
+.container1 {
+    width: 75%;
+    height: auto;
+    margin: 50px auto;
+}
+
 /* Responsive tablet screens */
-@media (min-width: 500px) {
-    ul.header1 {
+@media (min-width: 525px) {
+    .header1 {
         width: 175px;
-        font-size: 28px;
+        font-size: 22px;
         padding-left: 70px;
+        text-align: center;
+    }
+
+    #toggleAssist:checked + ul.nav-links {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(250, 240, 230);
+    }
+
+    #toggleAssist:checked + ul.nav-links li {
+        padding-left: 10%;
     }
 }
 
@@ -98,6 +109,7 @@ li {
     }
 
     ul.nav-links {
+        margin-top: 10px;
         display: block;
         float: right;
     }
@@ -108,7 +120,7 @@ li {
         border-bottom: none;
     }
 
-    ul.header1 {
+    .header1 {
         display: none;
     }
 }
