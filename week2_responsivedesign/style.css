@@ -12,12 +12,11 @@ body {
 }
 
 .header1 {
-    text-align: center;
     display: inline-block;
     width: 150px;
     font-size: 18px;
     vertical-align: top;
-    margin: 20px auto 0px;
+    margin-top: 20px;
 }
 
 nav {
@@ -85,9 +84,8 @@ li {
 @media (min-width: 525px) {
     .header1 {
         width: 175px;
-        font-size: 22px;
-        padding-left: 70px;
-        text-align: center;
+        font-size: 25px;
+        margin-top: 0px;
     }
 
     #toggleAssist:checked + ul.nav-links {
@@ -100,7 +98,7 @@ li {
     #toggleAssist:checked + ul.nav-links li {
         padding-left: 10%;
     }
-}
+}   
 
 /* Responsive large laptop screens */
 @media (min-width: 768px) {
@@ -122,5 +120,13 @@ li {
 
     .header1 {
         display: none;
+    }
+}
+
+/* Responsive larger laptop screens */
+@media (min-width: 960px) {
+    header {
+        width: 960px;
+        margin: auto;
     }
 }
