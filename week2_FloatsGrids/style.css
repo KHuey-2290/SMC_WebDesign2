@@ -1,3 +1,6 @@
+@import url("layout.css");
+@import url("color.css");
+
 /* First responsive site; begin with responsive small phone screens */
 body {
     margin: 0px;
@@ -72,12 +75,6 @@ li {
 
 .navfix {
     height: 100px;
-}
-
-.container1 {
-    width: 75%;
-    height: auto;
-    margin: 50px auto;
 }
 
 /* Responsive tablet screens */

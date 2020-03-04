@@ -1,0 +1,42 @@
+.floater1 {
+    float: left;
+    min-height: 200px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+/* Responsive breakpoint tablet */
+@media (min-width:525px) {
+    .w-med-100 {
+        width: 100%;
+    }
+    
+    .w-med-50 {
+        width: 50%;
+    }
+
+    .w-med-33 {
+        width: 33.33%;
+    }
+
+    .w-med-25 {
+        width: 25%;
+    }
+}
+
+/* Responsive breakpoint laptop */
+@media (min-width:768px) {
+    .w-lrg-100 {
+        width: 100%;
+    }
+
+    .w-lrg-50 {
+        width: 50%;
+    }
+}
