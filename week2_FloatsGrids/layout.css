@@ -1,6 +1,6 @@
 .floater1 {
     float: left;
-    min-height: 200px;
+    min-height: 350px;
 }
 
 .w-100 {
@@ -16,7 +16,7 @@
     margin: auto;
 }
 
-.floater1 p {
+.floater1 h1,p {
     display: none;
 }
 
@@ -24,10 +24,11 @@
     display: none;
 }
 
-.floater1:hover p {
-    display: inline-block;
-    padding: 30px;
-    text-align: justify;
+.floater1:hover h1 {
+    display: block;
+    padding: 50px 10px;
+    text-align: center;
+    font-size: 30px;
 }
 
 /* Responsive breakpoint tablet */
@@ -38,11 +39,6 @@
     
     .w-med-50 {
         width: 50%;
-    }
-
-    .text-box p {
-        width: 100%;
-        min-height: 200px;
     }
 
     .w-med-33 {
@@ -62,5 +58,19 @@
 
     .w-lrg-50 {
         width: 50%;
+    }
+
+    .floater1:hover h1 {
+        font-size: 26px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+
+    }
+
+    .floater1:hover p {
+        display: block;
+        font-size: 15px;
+        text-align: center;
+        padding: 10px 20px;
     }
 }
