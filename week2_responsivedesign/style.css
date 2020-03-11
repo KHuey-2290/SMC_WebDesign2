@@ -64,7 +64,7 @@ li {
     padding: 20px 0px;
 }
 
-#hamnav {
+#hamnav,#hamnav2 {
     width: 30px;
     float: right;
     margin: 15px;
@@ -76,10 +76,25 @@ li {
 
 .container1 {
     width: 75%;
-    height: auto;
+    height: 1000px;
     margin: 50px auto;
 }
 
+.red {
+    background-color: chocolate;
+}
+
+.yellow {
+    background-color: goldenrod;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.green {
+    background-color: olivedrab;
+}
 /* Responsive tablet screens */
 @media (min-width: 525px) {
     .header1 {
