@@ -4,11 +4,30 @@
 }
 
 .w-100 {
-    width: 100%;
+    width: 80%;
 }
 
 .w-50 {
     width: 50%;
+}
+
+.floater1 img {
+    width: 100%;
+    margin: auto;
+}
+
+.floater1 p {
+    display: none;
+}
+
+.floater1:hover img {
+    display: none;
+}
+
+.floater1:hover p {
+    display: inline-block;
+    padding: 30px;
+    text-align: justify;
 }
 
 /* Responsive breakpoint tablet */
@@ -19,6 +38,11 @@
     
     .w-med-50 {
         width: 50%;
+    }
+
+    .text-box p {
+        width: 100%;
+        min-height: 200px;
     }
 
     .w-med-33 {
