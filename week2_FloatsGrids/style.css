@@ -77,6 +77,11 @@ li {
     height: 100px;
 }
 
+main {
+    margin: 100px auto;
+    padding: 50px;
+}
+
 /* Responsive tablet screens */
 @media (min-width: 525px) {
     .header1 {
@@ -124,6 +129,5 @@ li {
 @media (min-width: 960px) {
     main {
         width: 960px;
-        margin: auto;
     }
 }
