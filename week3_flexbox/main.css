@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Raleway&display=swap');
+
+body {
+    margin: 0px;
+    background-color: rgb(250, 240, 230);
+    font-family: 'Raleway';
+}
+
+.logo1 {
+    width: 60px;
+    margin: 20px;
+}
+
+.header1 {
+    display: inline-block;
+    width: 150px;
+    font-size: 15px;
+    font-family: 'Libre Baskerville', serif;    vertical-align: top;
+    margin-top: 10px;
+    color: rgb(250, 240, 230);
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    font-family: 'Raleway';
+    font-weight: bold;
+    background-color: rgb(7, 7, 78);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(250, 240, 230);
+}
+
+.active-link1 {
+    text-decoration: underline;
+}
+
+a:hover {
+    color: chocolate;
+}
+    
+#toggleAssist-1, ul.nav-links1 {
+    display: none;
+}
+    
+#toggleAssist-1:checked + ul.nav-links1 {
+    display: block;
+    text-align: center;
+    background-color: rgb(7, 7, 78);
+}
+
+ul {
+    padding: 0px 20px;
+    margin: 0px;
+}
+
+li {
+    display: block;
+    padding: 20px 0px;
+    border-bottom: .5px solid rgb(250, 240, 230);
+}
+
+#hamNav-1 {
+    width: 30px;
+    float: right;
+    margin: 15px;
+}
+
+.navfix {
+    height: 100px;
+}
+
+/* Responsive tiny screens */
+@media (max-width: 319px) {
+    .header1 {
+        display: none;
+    }
+}
+
+/* Responsive tablet screens */
+@media (min-width: 525px) {
+    .header1 {
+        width: 300px;
+    }
+
+    #toggleAssist-1:checked + ul.nav-links1 {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(7, 7, 78);
+    }
+
+    #toggleAssist-1:checked + ul.nav-links1 li {
+        padding-left: 10%;
+    }
+}   
+
+/* Responsive large laptop screens */
+@media (min-width: 768px) {
+    .toggle-button1 {
+        display: none;
+    }
+
+    ul.nav-links1 {
+        margin-top: 10px;
+        display: block;
+        float: right;
+    }
+
+    .nav-links1 li {
+        display: inline-block;
+        margin: 0px 40px;
+        border-bottom: none;
+    }
+}
+
+/* Responsive larger laptop screens */
+@media (min-width: 960px) {
+    main {
+        width: 960px;
+        margin: auto;
+    }
+}
