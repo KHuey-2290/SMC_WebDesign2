@@ -1,18 +1,14 @@
 /* BACKGROUND COLORS */
+body {
+    background-color: #adadad;
+}
+
 .red-bg {
     background-color: rgb(226, 82, 66);
 }
 
-.green-bg {
-    background-color: rgb(106, 179, 138);
-}
-
 .blue-bg {
     background-color: midnightblue;
-}
-
-.yellow-bg {
-    background-color: rgb(222, 224, 85);
 }
 
 .purple-bg {

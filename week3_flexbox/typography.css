@@ -1,3 +1,15 @@
 nav ul li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+@media(min-width: 500px){
+    nav ul li {
+        font-size: 20px;
+    }
+}
+
+
+@media(min-width: 960px) {
+
+}
