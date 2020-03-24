@@ -11,6 +11,8 @@ nav .logo1 {
 
 nav .logo-container {
     background-color: #adadad;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -22,20 +24,31 @@ nav ul {
 nav ul li {
     padding: 10px;
     border-bottom: 2px solid #adadad;
+    text-align: center;
+}
+
+nav ul li.order-2 {
+    display: none;
 }
 
 nav a {
     text-decoration: none;
-    color: silver
+    color: silver;
 }
 
 nav a:hover {
     color: skyblue;
 }
 
+.active-link1 {
+    color: skyblue;
+    text-decoration: underline;
+}
+
 @media(min-width: 500px) {
-    nav .logo1 {
-        max-width: 50%;
+    nav.flex {
+        flex-direction: row;
+        justify-content: center;
     }
 
     nav ul.flex {
@@ -46,36 +59,13 @@ nav a:hover {
         align-items: center;
     }
 
-    nav li:first-child {
-        border-left: none;
-    }
-
-    nav ul li {
-        border-bottom: none;
-        border-right: 1px solid skyblue;
-        border-left: 1px solid skyblue;
-        /* margin: 0px 10px; */
-        flex-basis: 0;
-        flex-grow: 1;
-    }    
-}
-
-@media(min-width: 960px){
-    nav.flex {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    nav .logo1 {
+    nav ul li.order-2 {
+        display: inline-flex;
         max-width: 30%;
     }
 
-    nav ul.flex {
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-grow: 2;
-        text-align: center;
-        align-items: center;
+    #imgNav-1 {
+        display: none;
     }
 
     nav li:first-child {
@@ -86,8 +76,22 @@ nav a:hover {
         border-bottom: none;
         border-right: 1px solid skyblue;
         border-left: 1px solid skyblue;
-        /* margin: 0px 10px; */
         flex-basis: 0;
         flex-grow: 1;
+    }    
+
+    .order-1 {
+        order: 1;
     }
+
+    .order-2 {
+        order: 2;      
+    }
+
+    .order-3 {
+        order: 3;
+    }
+}
+
+@media(min-width: 960px) {
 }
