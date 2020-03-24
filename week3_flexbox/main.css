@@ -59,4 +59,9 @@ main {
     main {
         max-width: 960px;
     }
+
+    .flex-images {
+        justify-content: center;
+        align-items: center;
+    }
 }
