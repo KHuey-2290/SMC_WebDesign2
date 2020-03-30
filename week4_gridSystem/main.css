@@ -1,0 +1,9 @@
+@import url("CSS/colors.css");
+@import url("CSS/typography.css");
+@import url("CSS/navbar.css");
+@import url("CSS/layout.css");
+
+body {
+    margin: 0px;
+    background-color: rosybrown;
+}
