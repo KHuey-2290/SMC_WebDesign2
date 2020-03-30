@@ -28,7 +28,7 @@ main {
 
 @media(min-width: 500px) {
     main {
-        margin: 50px;
+        margin: 50px auto;
         align-items: center;
     }
 
@@ -40,10 +40,6 @@ main {
 
     .row-top img {
         max-width: 33.333%;
-    }
-
-    .row-bottom img {
-        max-width: 50%;
     }
 
     .grow-1 {
