@@ -9,6 +9,10 @@ p {
     font-size: 15px;
 }
 
+.gc-a,.gc-b,.gc-c p {
+    text-align: justify;
+}
+
 .gc-a p {
     text-align: justify;
 }
