@@ -8,3 +8,22 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
 }
+
+.grid-item p {
+    text-align: justify;
+}
+
+/* Responsive tablet screens */
+@media (min-width: 520px) {
+
+}   
+
+/* Responsive large laptop screens */
+@media (min-width: 768px) {
+
+}
+
+/* Responsive larger laptop screens */
+@media (min-width: 960px) {
+
+}

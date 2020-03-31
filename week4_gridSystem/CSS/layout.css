@@ -29,6 +29,10 @@
     margin-bottom: 75px;
 }
 
+.blue-bg p {
+    padding-bottom: 30px;
+}
+
 /* Responsive tablet screens */
 @media (min-width: 520px) {
 
