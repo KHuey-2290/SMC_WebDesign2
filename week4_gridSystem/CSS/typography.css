@@ -4,6 +4,11 @@ h1, h2 {
     font-family: 'Libre Baskerville', serif;
 }
 
+h2 {
+    color: rgb(46, 46, 46);
+    text-decoration:underline rgb(46, 46, 46);;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
