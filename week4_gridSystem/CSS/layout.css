@@ -1,0 +1,45 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 30px 20px;
+    grid-gap: 20px;
+}
+
+.grid-header,.grid-container h1,h2 {
+    margin-top: 0px;
+}
+
+.grid-header,.gc-a p {
+    margin-bottom: 75px;
+}
+
+.gc-b img {
+    margin-bottom: 75px;
+}
+
+.grid-header p {
+    font-size: 19px;
+}
+
+.grid-item img {
+    width: 100%;
+}
+
+.tbs-1,.tbs-5,.tbs-8 {
+    margin-bottom: 75px;
+}
+
+/* Responsive tablet screens */
+@media (min-width: 520px) {
+
+}   
+
+/* Responsive large laptop screens */
+@media (min-width: 768px) {
+
+}
+
+/* Responsive larger laptop screens */
+@media (min-width: 960px) {
+
+}

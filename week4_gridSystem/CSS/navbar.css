@@ -1,5 +1,4 @@
 nav {
-    position: fixed;
     width: 100%;
     margin: auto;
     background-color: rgb(188, 143, 143);
@@ -27,7 +26,6 @@ nav .logo1 {
     margin: 0px;
     padding: 10px;
     color: rgb(0, 65, 0);
-    font-family: 'Libre Baskerville', serif;
 }
 
 nav ul {
