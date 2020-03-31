@@ -1,8 +1,10 @@
+/* Responsive small mobile screens */
 .grid-container {
     display: grid;
     grid-template-columns: auto;
     padding: 30px 20px;
     grid-gap: 20px;
+    box-sizing: border-box;
 }
 
 .grid-header,.grid-container h1,h2 {
@@ -13,16 +15,16 @@
     margin-bottom: 75px;
 }
 
-.gc-b img {
-    margin-bottom: 75px;
-}
-
 .grid-header p {
     font-size: 19px;
 }
 
 .grid-item img {
     width: 100%;
+}
+
+.gc-b img {
+    margin-bottom: 75px;
 }
 
 .tbs-1,.tbs-5,.tbs-8 {
@@ -35,12 +37,150 @@
 
 /* Responsive tablet screens */
 @media (min-width: 520px) {
+    .grid-header {
+        grid-template-columns: 230px auto;
+        align-items: center;
+    }
 
+    .grid-header img {
+        max-width: 200px;
+        height: auto;
+    }
+
+    .grid-b {
+        justify-self: start;
+    }
+
+    /* For Wall Street */
+    .gc-a {
+        grid-template-columns: auto auto;
+    }
+
+    .grid-header,.gc-a p {
+        margin-bottom: 25px;
+    }
+
+    .gc-a .grid-item {
+        padding-right: 20px;
+    }
+
+    /* For Jerry Maguire */    
+    .gc-b img {
+        margin-bottom: 25px;
+    }
+
+    .gc-b {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .gc-b p {
+        text-align: justify;
+    }
+
+    .jm-1 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .jm-2 {
+        grid-column: 3 / span 1;
+        grid-row: 1;
+    }
+
+    .jm-4 {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+    }
+
+    .jm-3 {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    .jm-5 {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .jm-6 {
+        grid-column: 3 / span 1;
+        grid-row: 3;
+    }
+
+    .jm-8 {
+        grid-column: 1 / span 1;
+        grid-row: 4;
+    }
+
+    .jm-7 {
+        grid-column: 2 / span 2;
+        grid-row: 4;
+    }
 }   
 
 /* Responsive large laptop screens */
 @media (min-width: 768px) {
+    /* For Wall Street */
+    .gc-a {
+        grid-template-columns: 20% auto 20% auto;
+    }
 
+    .gc-a img {
+        justify-content: end;
+        padding-right: 0px;
+    }
+
+    /* For Jerry Maguire */
+    .gc-b {
+        grid-template-columns: 21% 21% 21% 21%;
+        grid-template-rows: 20% 25% 25% auto;
+        justify-content: space-evenly;
+    }
+
+    .gc-b img {
+        width: 100%;
+    }
+
+    .jm-2 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .jm-4 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .jm-6 {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .jm-8 {
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .jm-1 {
+        grid-column: 1;
+        grid-row: 2 / span 3;
+    }
+
+    .jm-3 {
+        grid-column: 2;
+        grid-row: 2 / span 3;
+    }
+
+    .jm-5 {
+        grid-column: 3;
+        grid-row: 2 / span 3;
+    }
+
+    .jm-7 {
+        grid-column: 4;
+        grid-row: 2 / span 3;
+    }
 }
 
 /* Responsive larger laptop screens */
