@@ -3,7 +3,6 @@ nav {
     background-color: rgb(156, 31, 40);
     margin: auto;
     width: 100%;
-    height: 50px;
 }
 
 .nav-flex {
@@ -11,16 +10,16 @@ nav {
     flex-direction: column;
 }
 
-nav .logo1 {
-    max-width: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-nav .logo-container {
+.logo-container {
     background-color: rgb(156, 31, 40);
     display: flex;
     justify-content: center;
+}
+
+.logo-img {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -43,18 +42,112 @@ nav a {
     font-family: 'Lato', sans-serif;
 }
 
+.list-hover-a:hover {
+    background-color: rgb(197, 49, 59);
+}
 
+.list-a {
+    background-color: rgb(197, 49, 59);
+}
+
+.list-hover-b:hover {
+    background-color: #A0D2ec;
+}
+
+.list-b {
+    background-color: #A0D2ec;
+}
+
+.list-hover-c:hover {
+    background-color: rgb(27, 27, 27);
+}
+
+.list-c {
+    background-color: rgb(27, 27, 27);
+}
+
+.list-hover-d:hover {
+    background-color: rgb(224, 125, 11);
+}
+
+.list-d {
+    background-color: rgb(224, 125, 11);
+}
 
 /* Tablet Screens */
 @media(min-width: 520px) {
+    .nav-flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
+    .logo-container {
+        justify-content: flex-start;
+    }
+
+    .logo-img {
+        width: 50%;
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul {
+        text-align: center;
+        align-items: center;
+    }
+
+    nav ul li {
+        border-top: none;
+        padding-right: 20px;
+    }
+
+    .list-hover-a:hover {
+        background-color: rgb(156, 31, 40);
+        text-decoration: underline;
+    }
+    
+    .list-a {
+        text-decoration: underline 2px rgb(197, 49, 59);
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-hover-b:hover {
+        text-decoration: underline 2px #A0D2ec;
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-b {
+        text-decoration: underline 2px #A0D2ec;
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-hover-c:hover {
+        text-decoration: underline 2px rgb(27, 27, 27);
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-c {
+        text-decoration: underline 2px rgb(27, 27, 27);
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-hover-d:hover {
+        text-decoration: underline 2px rgb(224, 125, 11);
+        background-color: rgb(156, 31, 40);
+    }
+    
+    .list-d {
+        text-decoration: underline 2px rgb(224, 125, 11);
+        background-color: rgb(156, 31, 40);
+    }
 }
 
-/*  */
+/* Laptop Screens */
 @media(min-width: 768px) {
     
 }
 
+/* Large Laptop Screens */
 @media(min-width: 960px) {
     
 }
