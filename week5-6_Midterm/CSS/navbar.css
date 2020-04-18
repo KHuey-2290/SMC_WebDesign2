@@ -43,11 +43,11 @@ nav a {
 }
 
 .list-hover-a:hover {
-    background-color: rgb(197, 49, 59);
+    background-color: rgb(252, 128, 136);
 }
 
 .list-a {
-    background-color: rgb(197, 49, 59);
+    background-color: rgb(252, 128, 136);
 }
 
 .list-hover-b:hover {
@@ -67,11 +67,11 @@ nav a {
 }
 
 .list-hover-d:hover {
-    background-color: rgb(224, 125, 11);
+    background-color: rgb(250, 168, 75);
 }
 
 .list-d {
-    background-color: rgb(224, 125, 11);
+    background-color: rgb(250, 168, 75);
 }
 
 /* Tablet Screens */
@@ -98,53 +98,78 @@ nav a {
 
     nav ul li {
         border-top: none;
-        padding-right: 20px;
+        padding-right: 30px;
     }
 
     .list-hover-a:hover {
         background-color: rgb(156, 31, 40);
-        text-decoration: underline;
+    }
+
+    nav a.link-a:hover {
+        color: rgb(252, 128, 136);
     }
     
     .list-a {
-        text-decoration: underline 2px rgb(197, 49, 59);
+        border-bottom: solid 4px rgb(252, 128, 136);
         background-color: rgb(156, 31, 40);
     }
     
-    .list-hover-b:hover {
-        text-decoration: underline 2px #A0D2ec;
+    li.list-hover-b:hover {
         background-color: rgb(156, 31, 40);
+    }
+
+    nav a.link-b:hover {
+        color: #A0D2ec;
     }
     
     .list-b {
-        text-decoration: underline 2px #A0D2ec;
+        border-bottom: solid 4px #A0D2ec;
         background-color: rgb(156, 31, 40);
     }
     
     .list-hover-c:hover {
-        text-decoration: underline 2px rgb(27, 27, 27);
         background-color: rgb(156, 31, 40);
+    }
+
+    nav a.link-c:hover {
+        color: rgb(27, 27, 27);
     }
     
     .list-c {
-        text-decoration: underline 2px rgb(27, 27, 27);
+        border-bottom: solid 4px rgb(27, 27, 27);
         background-color: rgb(156, 31, 40);
     }
     
     .list-hover-d:hover {
-        text-decoration: underline 2px rgb(224, 125, 11);
         background-color: rgb(156, 31, 40);
+    }
+
+    nav a.link-d:hover{
+        color: rgb(250, 168, 75)
     }
     
     .list-d {
-        text-decoration: underline 2px rgb(224, 125, 11);
+        border-bottom: solid 4px rgb(250, 168, 75);
         background-color: rgb(156, 31, 40);
     }
 }
 
 /* Laptop Screens */
 @media(min-width: 768px) {
-    
+    .logo-img {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    nav ul li {
+        border-top: none;
+        padding: 30px;
+    }
+
+    nav a {
+        font-size: 24px;
+    }
 }
 
 /* Large Laptop Screens */
