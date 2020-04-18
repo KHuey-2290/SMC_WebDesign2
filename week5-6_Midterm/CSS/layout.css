@@ -1,0 +1,30 @@
+/* Small Mobile Screens */
+
+    /* Home Page */
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 50px auto;
+        box-sizing: border-box;
+    }
+
+    .item-a img {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+/* Tablet Screens */
+@media(min-width: 520px) {
+
+}
+
+/* Laptop Screens */
+@media(min-width: 768px) {
+
+}
+
+/* Large Laptop Screens */
+@media(min-width: 960px) {
+    
+}

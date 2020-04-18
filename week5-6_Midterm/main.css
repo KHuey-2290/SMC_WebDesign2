@@ -4,6 +4,25 @@
 @import url("CSS/navbar.css");
 
 body {
-    background-color: rgb(255, 242, 124);
+    background-color: #fdff2e;
     margin: 0px;
+}
+
+/* Small Mobile Screens */
+    /* Home Page */
+
+
+/* Tablet Screens */
+@media(min-width: 520px) {
+
+}
+
+/* Laptop Screens */
+@media(min-width: 768px) {
+
+}
+
+/* Large Laptop Screens */
+@media(min-width: 960px) {
+    
 }
