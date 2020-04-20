@@ -53,6 +53,39 @@ h1, h2, h3, p {
     }
 
     /* About Page */
+    .about-grid.about-item {
+        width: 100%;
+        margin: 0px auto;
+    }
+
+    .about-grid img {
+        width: 100%;
+    }
+
+    .about-item-a {
+        padding-bottom: 30px;
+    }
+
+    .about-item-b {
+        padding-bottom: 50px;
+    }
+
+    .about-grid h1, p {
+        text-align: center;
+    }
+
+    .about-grid p {
+        font-size: 20px;
+    }
+
+    .about-grid h1 {
+        font-weight: 900;
+    }
+
+    .about-item-f {
+        padding-top: 50px;
+        font-style: italic;
+    }
 
     /* Menu Page */
 
@@ -114,10 +147,19 @@ h1, h2, h3, p {
 /* Large Laptop Screens */
 @media(min-width: 960px) {
     main {
-        max-width: 1200px;
+        max-width: 1000px;
     }
 
     header, footer {
-        max-width: 1600px;
+        max-width: 1350px;
     }
+
+    /* About Page */
+
+    /* Menu Page */
+
+    /* Location Page */
+
+    /* News Page */
+
 }
