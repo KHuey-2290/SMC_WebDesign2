@@ -8,9 +8,41 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3, p {
+    font-family: 'Lato', sans-serif;
+}
+
 /* Small Mobile Screens */
     /* Home Page */
+    .home-item-a img {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
 
+    .home-item-b {
+        width: 80%;
+        margin: 30px auto;
+        box-sizing: border-box;
+        border: solid 8px rgb(27, 27, 27);
+        color: whitesmoke;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .home-item-b p {
+        font-size: 25px;
+        font-weight: bold;
+        margin: 0px;
+    }
+
+    .socialmedia-icon,.sm-img {
+        width: 100%;
+    }
+
+    .footer-grid p {
+        color: rgb(255, 242, 124);
+    }
 
 /* Tablet Screens */
 @media(min-width: 520px) {
