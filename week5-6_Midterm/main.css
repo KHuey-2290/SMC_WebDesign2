@@ -24,6 +24,10 @@ h1, h2, h3, p {
     color: rgb(255, 242, 124);
 }
 
+.fg-b img {
+    width: 50%;
+}
+
 /* Small Mobile Screens */
     /* Home Page */
     .home-item-a img {

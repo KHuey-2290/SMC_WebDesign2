@@ -71,10 +71,6 @@
         padding-bottom: 30px;
     }
 
-    .fg-b img {
-        width: 50%;
-    }
-
     .foot-item-a {
         grid-column: 1 / span 1;
     }
@@ -92,6 +88,11 @@
     }
 
     /* About Page */
+    .main-grid {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 50px auto;
+    }
 
     /* Menu Page */
 
@@ -188,7 +189,6 @@
         grid-column: 3 / span 1;
         grid-row: 1;
         justify-items: end;
-        align-items: center;
         padding-bottom: 0px;
         width: 80%;
         max-width: 210px;
