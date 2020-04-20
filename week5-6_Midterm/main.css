@@ -8,6 +8,10 @@ body {
     margin: 0px;
 }
 
+header, main, footer {
+    margin: auto;
+}
+
 h1, h2, h3, p {
     font-family: 'Lato', sans-serif;
 }
@@ -45,16 +49,47 @@ h1, h2, h3, p {
     }
 
 /* Tablet Screens */
-@media(min-width: 520px) {
+@media(min-width: 500px) {
 
+    /* Home Page */
+    .home-item-b p {
+        font-size: 32px;
+    }
+
+    .sm-img {
+        width: 80%;
+    }
 }
 
 /* Laptop Screens */
 @media(min-width: 768px) {
+    /* Home Page */
+    .home-item-b {
+        border: solid 11px rgb(27, 27, 27);
+    }
+
+    .home-item-b p {
+        font-size: 38px;
+    }
+
+    .sm-img {
+        max-width: 80px;
+        height: auto;
+    }
+
+    .home-grid-2 {
+        max-width: 450px;
+    }
 
 }
 
 /* Large Laptop Screens */
 @media(min-width: 960px) {
-    
+    main {
+        max-width: 1200px;
+    }
+
+    header, footer {
+        max-width: 1600px;
+    }
 }

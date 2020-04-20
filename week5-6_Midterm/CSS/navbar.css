@@ -75,7 +75,7 @@ nav a {
 }
 
 /* Tablet Screens */
-@media(min-width: 520px) {
+@media(min-width: 500px) {
     .nav-flex {
         flex-direction: row;
         justify-content: space-between;
