@@ -16,6 +16,14 @@ h1, h2, h3, p {
     font-family: 'Lato', sans-serif;
 }
 
+.socialmedia-icon,.sm-img {
+    width: 100%;
+}
+
+.footer-grid p {
+    color: rgb(255, 242, 124);
+}
+
 /* Small Mobile Screens */
     /* Home Page */
     .home-item-a img {
@@ -40,13 +48,13 @@ h1, h2, h3, p {
         margin: 0px;
     }
 
-    .socialmedia-icon,.sm-img {
-        width: 100%;
-    }
+    /* About Page */
 
-    .footer-grid p {
-        color: rgb(255, 242, 124);
-    }
+    /* Menu Page */
+
+    /* Location Page */
+
+    /* News Page */
 
 /* Tablet Screens */
 @media(min-width: 500px) {
@@ -59,6 +67,14 @@ h1, h2, h3, p {
     .sm-img {
         width: 80%;
     }
+
+    /* About Page */
+
+    /* Menu Page */
+
+    /* Location Page */
+
+    /* News Page */
 }
 
 /* Laptop Screens */
@@ -72,7 +88,7 @@ h1, h2, h3, p {
         font-size: 38px;
     }
 
-    .sm-img {
+    .home-grid-2 img {
         max-width: 80px;
         height: auto;
     }
@@ -80,6 +96,14 @@ h1, h2, h3, p {
     .home-grid-2 {
         max-width: 450px;
     }
+
+    /* About Page */
+
+    /* Menu Page */
+
+    /* Location Page */
+
+    /* News Page */
 
 }
 
