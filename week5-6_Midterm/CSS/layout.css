@@ -97,8 +97,18 @@
     /* Menu Page */
 
     /* Location Page */
+    .location-grid {
+        grid-template-columns: auto;
+    }
 
     /* News Page */
+    .news-grid {
+        grid-template-columns: auto;
+    }
+
+    .news-button a {
+        display: block;
+    }
 
 /* Tablet Screens */
 @media(min-width: 500px) {
@@ -199,6 +209,7 @@
     /* Location Page */
 
     /* News Page */
+    
 }
 
 /* Laptop Screens */
@@ -238,6 +249,101 @@
     /* Location Page */
 
     /* News Page */
+    .news-grid {
+        grid-template-columns: 30% 4.5% 30% 4.5% 30%;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+    }
+
+    .news-grid .grid-item {
+        align-self: center;
+        justify-self: center;
+        padding: 30px 0px;
+    }
+
+    .news-item-a {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+    }
+
+    .news-item-b {
+        grid-column: 1 / span 1;
+        grid-row: 2;
+    }
+
+    .news-item-c {
+        grid-column: 3 / span 3;
+        grid-row: 2;
+    }
+
+    .news-item-e {
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+
+    .news-item-d {
+        grid-column: 5 / span 1;
+        grid-row: 3;
+    }
+
+    .news-item-f {
+        grid-column: 1 / span 1;
+        grid-row: 4;
+    }
+
+    .news-grid-g {
+        grid-column: 3 / span 3;
+        grid-row: 4;
+    }
+
+    .about-item-i {
+        grid-column: 1 / span 3;
+        grid-row: 5;
+    }
+
+    .news-item-h {
+        grid-column: 5 / span 1;
+        grid-row: 5;
+    }
+
+    .news-item-j {
+        grid-column: 1 / span 1;
+        grid-row: 6;
+    }
+
+    .news-item-k {
+        grid-column: 3 / span 3;
+        grid-row: 6;
+    }
+
+    .news-item-m {
+        grid-column: 1 / span 3;
+        grid-row: 7;
+    }
+
+    .news-item-l {
+        grid-column: 5 / span 1;
+        grid-row: 7;
+    }
+
+    .news-item-n {
+        grid-column: 1 / span 1;
+        grid-row: 8;
+    }
+
+    .news-item-o {
+        grid-column: 3 / span 3;
+        grid-row: 8;
+    }
+
+    .news-item-q {
+        grid-column: 1 / span 3;
+        grid-row: 9;
+    }
+
+    .news-item-p {
+        grid-column: 5 / span 1;
+        grid-row: 9;
+    }
 
 }
 
