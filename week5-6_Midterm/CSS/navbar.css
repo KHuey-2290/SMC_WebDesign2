@@ -43,35 +43,35 @@ nav a {
 }
 
 .list-hover-a:hover {
-    background-color: rgb(252, 128, 136);
+    background-color: #A0D2ec;
 }
 
 .list-a {
-    background-color: rgb(252, 128, 136);
+    background-color: #A0D2ec;
 }
 
 .list-hover-b:hover {
-    background-color: #A0D2ec;
+    background-color: rgb(255, 83, 95);
 }
 
 .list-b {
-    background-color: #A0D2ec;
+    background-color: rgb(255, 83, 95);
 }
 
 .list-hover-c:hover {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(250, 168, 75);
 }
 
 .list-c {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(250, 168, 75);
 }
 
 .list-hover-d:hover {
-    background-color: rgb(250, 168, 75);
+    background-color: rgb(27, 27, 27);
 }
 
 .list-d {
-    background-color: rgb(250, 168, 75);
+    background-color: rgb(27, 27, 27);
 }
 
 /* Tablet Screens */
@@ -106,11 +106,11 @@ nav a {
     }
 
     nav a.link-a:hover {
-        color: rgb(252, 128, 136);
+        color: #A0D2ec;
     }
     
     .list-a {
-        border-bottom: solid 4px rgb(252, 128, 136);
+        border-bottom: solid 4px #A0D2ec;
         background-color: rgb(156, 31, 40);
     }
     
@@ -119,11 +119,11 @@ nav a {
     }
 
     nav a.link-b:hover {
-        color: #A0D2ec;
+        color: rgb(255, 83, 95);
     }
     
     .list-b {
-        border-bottom: solid 4px #A0D2ec;
+        border-bottom: solid 4px rgb(255, 83, 95);
         background-color: rgb(156, 31, 40);
     }
     
@@ -132,11 +132,11 @@ nav a {
     }
 
     nav a.link-c:hover {
-        color: rgb(27, 27, 27);
+        color: rgb(250, 168, 75);
     }
     
     .list-c {
-        border-bottom: solid 4px rgb(27, 27, 27);
+        border-bottom: solid 4px rgb(250, 168, 75);
         background-color: rgb(156, 31, 40);
     }
     
@@ -145,11 +145,11 @@ nav a {
     }
 
     nav a.link-d:hover{
-        color: rgb(250, 168, 75)
+        color: rgb(27, 27, 27);
     }
     
     .list-d {
-        border-bottom: solid 4px rgb(250, 168, 75);
+        border-bottom: solid 4px rgb(27, 27, 27);
         background-color: rgb(156, 31, 40);
     }
 }
