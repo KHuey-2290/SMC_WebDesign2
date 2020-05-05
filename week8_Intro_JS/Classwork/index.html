@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <style>
+        #header1 {
+            color: black;
+        }
+
+        .pane {
+            background-color: teal;
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+
+    <title>Intro to JS</title>
+</head>
+
+<body>
+    <h1 id="header1">Quarantine Life</h1>
+
+    <section>
+        <div class="pane" id="tealPane"></div>
+        <button id="changeToRed">Change To Red</button>
+    </section>
+
+    <script>
+        // alert("It won't last forever!");
+        var response = prompt("What's your name?", "Pickle Rick")
+        var myHeader = document.getElementById("header1");
+        var tealPane = document.getElementById("tealPane");
+        var redButton = document.getElementById("changeToRed");
+
+        myHeader.style.color = "red";
+        myHeader.style.backgroundColor = "plum";
+        myHeader.style.fontSize = "56px";
+
+        myHeader.innerText = "Hello!" + response;
+        console.log("Hello " + 7 + " Pickle Rick");
+
+        redButton.addEventListener("click", function() {
+            console.log("Click happened!");
+            tealPane.style.backgroundColor = "lightsalmon";
+            var notification = document.createElement("h5");
+            notification.innerText = "This is red now!";
+            tealPane.appendChild(notification);
+        })
+
+        console.log("Pickle " + 7 + " Rick");
+    </script>
+</body>
+</html>
