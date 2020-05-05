@@ -2,3 +2,58 @@ body {
     background-color: darksalmon;
     margin: 0px;
 }
+
+.container {
+    display: inline-block;
+    width: 40%;
+    height: 500px;
+    background-color: saddlebrown;
+    box-sizing: border-box;
+    margin: 200px 75px;
+    padding: 30px;
+}
+
+.nesting-box {
+    margin: auto;
+    padding: 30px;
+    width: 75%;
+    height: 75%;
+    align-content: center;
+}
+
+#b1 {
+    background-color: chocolate;
+}
+
+#b2 {
+    background-color: darkorange;
+}
+
+#b3 {
+    background-color: goldenrod;
+}
+
+#b4 {
+    background-color: khaki;
+}
+
+#ba {
+    background-color: maroon;
+}
+
+#bb {
+    background-color: red;
+}
+
+#bc {
+    background-color: rgb(223, 141, 168);
+}
+
+#bd {
+    background-color: pink;
+}
+
+.container .nesting-box img {
+    width: 75%;
+    padding: 15px 25px;
+}
