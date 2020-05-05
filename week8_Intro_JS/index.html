@@ -4,7 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+    <style>
+        body {
+            background-color: darksalmon;
+            margin: 0px;
+        }
+
+        #header1,#header2 {
+            color: darkslateblue;
+            font-size: 40px;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            display: inline-block;
+            width: 40%;
+            height: auto;
+            margin: 200px auto;
+            padding: 30px;
+        }
+
+        .container-base,.nesting-box {
+            margin: auto;
+            padding: 30px;
+            width: 75%;
+            height: 75%;
+            align-content: center;
+        }
+
+        .container-base {
+            background-color: saddlebrown;
+        }
+
+        .container .nesting-box img {
+            width: 75%;
+            padding: 15px 25px;
+        }
+
+        .button-row {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .button-row button {
+            margin-right: 15px;
+            padding: 10px;
+        }
+    </style>
 
     <title>New to Java Script!</title>
 </head>
@@ -12,7 +60,7 @@
 <body>
     <section>
         <div class="container">
-            <h1 class="header1">Billy and Mandy</h1>
+            <h1 id="header1">Billy and Mandy</h1>
 
             <div class="container-base" id="bigBox1">
                 <div class="nesting-box" id="b1">
@@ -27,16 +75,16 @@
             </div>
 
             <div class="button-row">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button id=buttonHeader1>H1</button>
+                <button id="buttonMidBlue">Box 1</button>
+                <button id= "buttonIndigo">Box 2</button>
+                <button id="buttonMedPurple">Box 3</button>
+                <button id="buttonViolet">Box 4</button>
             </div>
         </div>
 
         <div class="container">
-            <h1 class="header1">Invader Zim</h1>
+            <h1 id="header2">Invader Zim</h1>
 
             <div class="container-base" id="bigBox2">
                 <div class="nesting-box" id="ba">
@@ -51,16 +99,126 @@
             </div>
 
             <div class="button-row">
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+                <button id="buttonHeader2">H2</button>
+                <button id="buttonDSGrey">Box 5</button>
+                <button id="buttonDarkGreen">Box 6</button>
+                <button id="buttonSeaGreen">Box 7</button>
+                <button id="buttonLightGreen">Box 8</button>
             </div>
         </div>
     </section>
 
+    <script>
+        var response = prompt("What is your favorite thing about Los Angeles?");
 
+        var header1 = document.getElementById("header1");
+        var header2 = document.getElementById("header2");
+
+        var b1 = document.getElementById("b1");
+        var b2 = document.getElementById("b2");
+        var b3 = document.getElementById("b3");
+        var b4 = document.getElementById("b4");
+        var ba = document.getElementById("ba");
+        var bb = document.getElementById("bb");
+        var bc = document.getElementById("bc");
+        var bd = document.getElementById("bd");
+
+        var buttonHeader1 = document.getElementById("buttonHeader1");
+        var buttonHeader2 = document.getElementById("buttonHeader2");
+
+        var buttonMidBlue = document.getElementById("buttonMidBlue");
+        var buttonIndigo = document.getElementById("buttonIndigo");
+        var buttonMedPurple = document.getElementById("buttonMedPurple");
+        var buttonViolet = document.getElementById("buttonViolet");
+
+        var buttonDSGrey = document.getElementById("buttonDSGrey");
+        var buttonDGreen = document.getElementById("buttonDGreen");
+        var buttonSGreen = document.getElementById("buttonSGreen");
+        var buttonLGreen = document.getElementById("buttonLGreen");
+
+        b1.style.backgroundColor = "chocolate";
+        b2.style.backgroundColor = "darkorange";
+        b3.style.backgroundColor = "goldenrod";
+        b4.style.backgroundColor = "khaki";
+
+        ba.style.backgroundColor = "maroon";
+        bb.style.backgroundColor = "crimsonred";
+        bc.style.backgroundColor = "#f580ce";
+        bd.style.backgroundColor = "pink";
+
+        console.log(response);
+        console.log("Awesome!");
+
+        buttonHeader1.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Background " + "change!")
+            header1.style.backgroundColor = "lightblue";
+        })
+        
+        buttonHeader2.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Background " + "change!")
+            header2.style.backgroundColor = "darkslateblue";
+            header2.style.color = "lightblue";
+        })
+
+        buttonMidBlue.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Midnight" + " Blue");
+            b1.style.backgroundColor = "midnightblue";
+        })
+
+        buttonIndigo.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Indigo");
+            b2.style.backgroundColor = "indigo";
+        })
+
+        buttonMedPurple.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Medium" + " Purple");
+            b3.style.backgroundColor = "mediumpurple";
+        })
+
+        buttonViolet.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Violet");
+            b4.style.backgroundColor = "violet";
+        })
+
+        buttonDSGrey.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Dark" + " Slate" + " Grey");
+            ba.style.backgroundColor = "darkslategrey";
+        })
+
+        buttonDGreen.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Dark " + "Green");
+            bb.style.backgroundColor = "darkgreen";
+        })
+
+        buttonSGreen.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Sea" + " Green");
+            bc.style.backgroundColor = "seagreen";
+        })
+
+        buttonLGreen.addEventListener("click", function() {
+            console.log("Click happened!");
+            console.log("Color " + "change!");
+            console.log("Light" + " Green");
+            bd.style.backgroundColor = "lightgreen";
+        })
+
+    </script>
 
 </body>
 </html>

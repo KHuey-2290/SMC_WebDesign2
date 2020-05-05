@@ -1,11 +1,8 @@
+<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
 body {
     background-color: darksalmon;
     margin: 0px;
-}
-
-h1 {
-    color: darkslateblue;
-    text-align: center;
 }
 
 .container {
