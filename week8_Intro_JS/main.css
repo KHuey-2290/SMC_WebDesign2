@@ -3,22 +3,29 @@ body {
     margin: 0px;
 }
 
+h1 {
+    color: darkslateblue;
+    text-align: center;
+}
+
 .container {
     display: inline-block;
     width: 40%;
-    height: 500px;
-    background-color: saddlebrown;
-    box-sizing: border-box;
-    margin: 200px 75px;
+    height: auto;
+    margin: 200px auto;
     padding: 30px;
 }
 
-.nesting-box {
+.container-base,.nesting-box {
     margin: auto;
     padding: 30px;
     width: 75%;
     height: 75%;
     align-content: center;
+}
+
+.container-base {
+    background-color: saddlebrown;
 }
 
 #b1 {
@@ -56,4 +63,14 @@ body {
 .container .nesting-box img {
     width: 75%;
     padding: 15px 25px;
+}
+
+.button-row {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.button-row button {
+    margin-right: 15px;
+    padding: 10px;
 }
