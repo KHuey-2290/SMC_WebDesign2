@@ -1,5 +1,5 @@
 var response = confirm("Spring is here!");
-console.log("Flowers!");
+console.log("Sorry for the allergies!!");
 
 var docHeader = document.getElementById("docHeader");
 var headerButton = document.getElementById("buttonColorChange");

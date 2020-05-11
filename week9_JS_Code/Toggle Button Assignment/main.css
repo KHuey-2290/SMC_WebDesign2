@@ -18,6 +18,7 @@ header {
 #buttonColorChange {
     margin-bottom: 50px;
     margin-left: 50%;
+    padding: 10px;
 
 }
 
@@ -39,4 +40,8 @@ header {
     width: 80%;
     margin: auto;
     padding: 25px;
+}
+
+.button-row button {
+    padding: 10px;
 }
