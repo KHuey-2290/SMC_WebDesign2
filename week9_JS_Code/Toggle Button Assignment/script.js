@@ -24,8 +24,7 @@ var headerColorChange = function(){
         var notification = document.createElement("h3");
         notification.innerText = "Buttercups, Daisies, Lilies, Poppies!";
         docHeader.appendChild(notification);
-    })
-    
+    })   
 }
 
 headerColorChange();
