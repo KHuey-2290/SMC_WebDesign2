@@ -3,11 +3,11 @@ body {
     background-color: lightblue;
 }
 
-.header-container {
+header {
     margin: auto;
 }
 
-header {
+#docHeader {
     box-sizing: border-box;
     margin: 20px auto;
     width: 90%;
@@ -27,7 +27,7 @@ header {
     margin: auto;
 }
 
-#flowerImg img {
+.flowers img {
     width: 20%;
     margin: auto;
     padding: 20px;

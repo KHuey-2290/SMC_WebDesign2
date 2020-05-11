@@ -4,8 +4,15 @@ console.log("Flowers!");
 var docHeader = document.getElementById("docHeader");
 var headerButton = document.getElementById("buttonColorChange");
 
-var flowerImage = document.getElementById("flowerImg");
-var flowerButton = document.getElementById("buttonImgChange");
+var flowerButtercupImage = document.getElementById("flowerButtercupImg");
+var flowerDaisyImage = document.getElementById("flowerDaisyImg");
+var flowerLilyImage = document.getElementById("flowerLilyImg");
+var flowerPoppyImage = document.getElementById("flowerPoppyImg");
+
+var flowerButtercupButton = document.getElementById("buttonButtercupChange");
+var flowerDaisyButton = document.getElementById("buttonDaisyChange");
+var flowerLilyButton = document.getElementById("buttonLilyChange");
+var flowerPoppyButton = document.getElementById("buttonPoppyChange");
 
 var headerColorChange = function(){
     var redComp = Math.random() * 255;
