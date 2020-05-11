@@ -3,18 +3,40 @@ body {
     background-color: lightblue;
 }
 
+.header-container {
+    margin: auto;
+}
+
 header {
     box-sizing: border-box;
-    width: 100%;
+    margin: 20px auto;
+    width: 90%;
     min-height: 200px;
+    padding: 20px;
 }
 
 #buttonColorChange {
     margin-bottom: 50px;
+    margin-left: 50%;
+
+}
+
+.flowers {
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 #flowerImg img {
     width: 20%;
     margin: auto;
     padding: 20px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 25px;
 }

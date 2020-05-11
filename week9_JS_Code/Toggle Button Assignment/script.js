@@ -14,10 +14,13 @@ var headerColorChange = function(){
     var blueComp = Math.random() * 255;
 
     docHeader.style.backgroundColor = "rgb(" + redComp + ", " + greenComp + ", " + blueComp + ")";
+    docHeader.style.textAlign = "center";
     docHeader.style.border = "solid 2px midnightblue";
 
     headerButton.addEventListener("click", function() {
         console.log("Click happened!");
+        console.log("Color Change YAY");
+        console.log("Flower Power");
         var notification = document.createElement("h3");
         notification.innerText = "Buttercups, Daisies, Lilies, Poppies!";
         docHeader.appendChild(notification);
@@ -25,26 +28,6 @@ var headerColorChange = function(){
     
 }
 
-var swapFlowerImage = function(){
-    console.log(flowerImage.alt);
-
-    // the first image is showing
-    if(flowerImage.alt == "First image of flowers") {
-        flowerImage.src = "Assets/flowers2.jpeg";
-        flowerImage.alt = "Second image of flowers";
-        flowerButton.innerText = "Show first one!";
-    }
-
-    // otherwise
-    else { 
-        flowerImage.src = "Assets/flowers1.jpg";
-        flowerImage.alt = "First image of flowers";
-        flowerButton.innerText = "Show second one!"; 
-    }
-}
-
 headerColorChange();
 
 headerButton.addEventListener("click", headerColorChange);
-
-flowerButton.addEventListener("click", swapFlowerImage);
