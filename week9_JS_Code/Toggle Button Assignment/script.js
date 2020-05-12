@@ -29,8 +29,9 @@ var headerColorChange = function(){
         console.log("Click happened!");
         console.log("Color Change YAY");
         console.log("Flower Power");
-        var notification = document.createElement("h3");
+        var notification = document.createElement("h1");
         notification.innerText = "Buttercups, Daisies, Lilies, Poppies!";
+        notification.style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
         docHeader.appendChild(notification);
     })   
 }
@@ -50,7 +51,7 @@ var swapButtercupImage = function(){
     }
 }
 
-var swapLargeImage = function(){
+var swapLargeImageButtercup = function(){
     console.log("Poppies images placed here!");
 
     if(largeFlowerImage.alt == "First image of California ButterCups"){
@@ -80,7 +81,7 @@ var swapDaisyImage = function(){
     }
 }
 
-var swapLargeImage = function(){
+var swapLargeImageDaisy = function(){
     console.log("Poppies images placed here!");
 
     if (largeFlowerImage.alt == "First image of Fleabane Daisies"){
@@ -110,7 +111,7 @@ var swapLilyImage = function(){
     }
 }
 
-var swapLargeImage = function(){
+var swapLargeImageLily = function(){
     console.log("Poppies images placed here!");
 
     if(largeFlowerImage.alt == "First image of Catalina Mariposa Lilies"){ 
@@ -140,7 +141,7 @@ var swapPoppyImage = function(){
     }
 }
 
-var swapLargeImage = function(){
+var swapLargeImagePoppy = function(){
     console.log("Poppies images placed here!");
 
     if(largeFlowerImage.alt == "First image of California Poppies"){
@@ -160,13 +161,13 @@ headerColorChange();
 headerButton.addEventListener("click", headerColorChange);
 
 flowerButtercupButton.addEventListener("click", swapButtercupImage);
-flowerButtercupButton.addEventListener("click", swapLargeImage);
+flowerButtercupButton.addEventListener("click", swapLargeImageButtercup);
 
 flowerDaisyButton.addEventListener("click", swapDaisyImage);
-flowerDaisyButton.addEventListener("click", swapLargeImage);
+flowerDaisyButton.addEventListener("click", swapLargeImageDaisy);
 
 flowerLilyButton.addEventListener("click", swapLilyImage);
-flowerLilyButton.addEventListener("click", swapLargeImage);
+flowerLilyButton.addEventListener("click", swapLargeImageLily);
 
 flowerPoppyButton.addEventListener("click", swapPoppyImage);
-flowerPoppyButton.addEventListener("click", swapLargeImage);
+flowerPoppyButton.addEventListener("click", swapLargeImagePoppy);

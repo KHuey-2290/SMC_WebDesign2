@@ -5,6 +5,7 @@ body {
 
 header {
     margin: auto;
+    margin-bottom: 75px;
 }
 
 #docHeader {
@@ -47,7 +48,7 @@ header {
 }
 
 .large-flower-img {
-    width: 80%;
+    width: 60%;
     margin: 75px auto;
 }
 
