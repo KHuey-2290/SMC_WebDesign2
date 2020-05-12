@@ -8,6 +8,7 @@ var flowerButtercupImage = document.getElementById("flowerButtercupImg");
 var flowerDaisyImage = document.getElementById("flowerDaisyImg");
 var flowerLilyImage = document.getElementById("flowerLilyImg");
 var flowerPoppyImage = document.getElementById("flowerPoppyImg");
+var largeFlowerImage = document.getElementById("largeFlowerImg");
 
 var flowerButtercupButton = document.getElementById("buttonButtercupChange");
 var flowerDaisyButton = document.getElementById("buttonDaisyChange");
@@ -37,7 +38,7 @@ var headerColorChange = function(){
 var swapButtercupImage = function(){
     console.log(flowerButtercupImage.alt);
 
-    if(flowerButtercupImage.alt == "First image of California ButterCup"){
+    if(flowerButtercupImage.alt == "First image of California ButterCups"){
         flowerButtercupImage.src = "Assets/buttercup1.jpg";
         flowerButtercupImage.alt = "Second image of California ButterCups";
         flowerButtercupImage.innerText = "Show the first one!";
@@ -46,6 +47,21 @@ var swapButtercupImage = function(){
         flowerButtercupImage.src = "Assets/buttercup2.jpg";
         flowerButtercupImage.alt = "First image of California ButterCups";
         flowerButtercupImage.innerText = "Show the second one!";
+    }
+}
+
+var swapLargeImage = function(){
+    console.log("Poppies images placed here!");
+
+    if(largeFlowerImage.alt == "First image of California ButterCups"){
+        largeFlowerImage.src = "Assets/buttercup1.jpg";
+        largeFlowerImage.alt = "Second image of California ButterCups";
+        largeFlowerImage.innerText = "Show the first one!";
+    } 
+    else {
+        largeFlowerImage.src = "Assets/buttercup2.jpg";
+        largeFlowerImage.alt = "First image of California ButterCups";
+        largeFlowerImage.innerText = "Show the second one!";
     }
 }
 
@@ -64,6 +80,21 @@ var swapDaisyImage = function(){
     }
 }
 
+var swapLargeImage = function(){
+    console.log("Poppies images placed here!");
+
+    if (largeFlowerImage.alt == "First image of Fleabane Daisies"){
+        largeFlowerImage.src = "Assets/daisy1.jpg";
+        largeFlowerImage.alt = "Second image of Fleabane Daisies";
+        largeFlowerImage.innerText = "Show the first one!";
+    } 
+    else  {
+        largeFlowerImage.src = "Assets/daisy2.jpg";
+        largeFlowerImage.alt = "First image of Fleabane Daisies";
+        largeFlowerImage.innerText = "Show the second one!";
+    }
+}
+
 var swapLilyImage = function(){
     console.log(flowerLilyImage.alt);
 
@@ -76,6 +107,21 @@ var swapLilyImage = function(){
         flowerLilyImage.src = "Assets/lily2.jpg";
         flowerLilyImage.alt = "First image of Catalina Mariposa Lilies";
         flowerLilyImage.innerText = "Show the second one!";
+    }
+}
+
+var swapLargeImage = function(){
+    console.log("Poppies images placed here!");
+
+    if(largeFlowerImage.alt == "First image of Catalina Mariposa Lilies"){ 
+        largeFlowerImage.src = "Assets/lily1.jpg";
+        largeFlowerImage.alt = "Second image of Catalina Mariposa Lilies";
+        largeFlowerImage.innerText = "Show the first one!";
+    } 
+    else { 
+        largeFlowerImage.src = "Assets/lily2.jpg";
+        largeFlowerImage.alt = "First image of Catalina Mariposa Lilies";
+        largeFlowerImage.innerText = "Show the second one!";
     }
 }
 
@@ -94,11 +140,33 @@ var swapPoppyImage = function(){
     }
 }
 
+var swapLargeImage = function(){
+    console.log("Poppies images placed here!");
+
+    if(largeFlowerImage.alt == "First image of California Poppies"){
+        largeFlowerImage.src = "Assets/poppy1.jpg";
+        largeFlowerImage.alt = "Second image of California Poppies";
+        largeFlowerImage.innerText = "Show the first one!";
+    }
+    else {
+        largeFlowerImage.src = "Assets/poppy2.jpg";
+        largeFlowerImage.alt = "First image of California Poppies";
+        largeFlowerImage.innerText = "Show the second one!";
+    }
+}
+
 headerColorChange();
 
 headerButton.addEventListener("click", headerColorChange);
 
 flowerButtercupButton.addEventListener("click", swapButtercupImage);
+flowerButtercupButton.addEventListener("click", swapLargeImage);
+
 flowerDaisyButton.addEventListener("click", swapDaisyImage);
+flowerDaisyButton.addEventListener("click", swapLargeImage);
+
 flowerLilyButton.addEventListener("click", swapLilyImage);
+flowerLilyButton.addEventListener("click", swapLargeImage);
+
 flowerPoppyButton.addEventListener("click", swapPoppyImage);
+flowerPoppyButton.addEventListener("click", swapLargeImage);

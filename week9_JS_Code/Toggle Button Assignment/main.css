@@ -17,26 +17,26 @@ header {
 
 #buttonColorChange {
     margin-bottom: 50px;
-    margin-left: 50%;
+    margin-left: 45%;
     padding: 10px;
 
 }
 
 .flowers {
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
     height: auto;
     margin: auto;
 }
 
 .flowers img {
     width: 20%;
-    margin: auto;
-    padding: 20px;
 }
 
 .button-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 80%;
     margin: auto;
     padding: 25px;
@@ -44,4 +44,13 @@ header {
 
 .button-row button {
     padding: 10px;
+}
+
+.large-flower-img {
+    width: 80%;
+    margin: 75px auto;
+}
+
+.large-flower-img img {
+    width: 100%;
 }
