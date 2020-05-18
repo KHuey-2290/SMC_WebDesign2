@@ -40,11 +40,11 @@ select {
 #galleryCarousel {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
     width: 90%;
     margin: 200px auto;
-    padding: 25px;
+    padding: 40px;
 
     box-sizing: border-box;
     background-color: rgb(86, 86, 150);
