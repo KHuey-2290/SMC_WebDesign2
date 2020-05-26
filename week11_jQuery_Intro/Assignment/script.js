@@ -19,15 +19,20 @@ $(document).ready(function () {
         $('#galleryImg1').fadeToggle(3000);
       })
 
+    // Buttons for image 2
     $("#buttonToggle").click(function(){
-        $("#galleryImg1").toggle();
+        $("#galleryImg2").toggle();
     });
 
-    // Buttons for image 2
-
     // Buttons for image 3
+    $( "#buttonFadeTo" ).click(function() {
+        $("#galleryImg3").fadeTo( "fast", Math.random() );
+    });
 
     // Buttons for image 4
+    $("#buttonSlideToggle").click(function() {
+        $("#galleryImg4").slideToggle( "slow" );
+    });
 
     // Buttons for image 5
 
@@ -41,15 +46,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     //everything should go in here!!!
-    $("#clickB").click(function () {
-      $(".long-ps").append(
-        '<p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque earum laudantium aliquid!</p>'
-        );
-    })
 
-    $("#clickR").click(function () {
-      $('.long-paragraph').remove();
-    })
 
     $("#hideBtn").click(function () {
       $('.hideable-img').hide();
