@@ -3,15 +3,23 @@ body {
     background-color: lightblue;
 }
 
+/* CSS for header */
 header {
     margin: 50px auto;
     text-align: center;
     margin-bottom: 100px;
 }
 
-header h1,h2 {
+h1,h2,h3 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: midnightblue;
+}
+
+h3 {
+    display: none;
+    font-size: 34px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .header-buttons {
@@ -19,15 +27,30 @@ header h1,h2 {
     margin: 50px auto;
 }
 
+/* CSS for buttons */
 .header-buttons button {
     background-color: rgb(25, 25, 61);
     color: azure;
+    border-radius: 10px;
+
     font-size: 18px;
     padding: 15px;
     margin: 0px 20px;
+}
+
+.gallery-container button {
+    font-size: 12px;
+    font-weight: bolder;
+    padding: 7px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    background-color: azure;
+    color: rgb(25, 25, 61);
     border-radius: 10px;
 }
 
+/* CSS for images */
 .gallery-container {
     margin: 50px auto;
     box-sizing: border-box;

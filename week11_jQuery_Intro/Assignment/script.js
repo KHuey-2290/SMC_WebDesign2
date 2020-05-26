@@ -1,14 +1,41 @@
 $(document).ready(function () {
-    //everything should go in here!!!
+    //Buttons in header
     $("#hipsterVeniceButton").click(function(){
-        $(".container-1").toggle();
+        $(".container-1").show();
         $(".container-2").hide();
-    })
+        $("#hipsterHeader").show();
+        $("#touristHeader").hide();
+    });
 
     $("#touristVeniceButton").click(function(){
-        $(".container-2").toggle();
+        $(".container-2").show();
         $(".container-1").hide();
-    })
+        $("#hipsterHeader").hide();
+        $("#touristHeader").show();
+    });
+
+    // Buttons for image 1
+    $("#buttonFadeToggle").click(function () {
+        $('#galleryImg1').fadeToggle(3000);
+      })
+
+    $("#buttonToggle").click(function(){
+        $("#galleryImg1").toggle();
+    });
+
+    // Buttons for image 2
+
+    // Buttons for image 3
+
+    // Buttons for image 4
+
+    // Buttons for image 5
+
+    // Buttons for image 6
+
+    // Buttons for image 7
+
+    // Buttons for image 8
 
 })//end of document ready
 
