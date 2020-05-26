@@ -54,6 +54,7 @@ h3 {
 .gallery-container {
     margin: 50px auto;
     box-sizing: border-box;
+    max-height: 500px;
     width: 90%;
 
     display: grid;
