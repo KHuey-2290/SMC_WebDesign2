@@ -70,13 +70,13 @@ $(document).ready(function () {
     });
 
     // Buttons for image 8
-    $("#buttonMoveDown").toggle(function(){
+    $("#buttonMoveDown").click(function(){
         $("#galleryImg8").animate( {
             marginTop: "100px",
         }, 2000);
     });
 
-    $("#buttonMoveUp").toggle(function() {
+    $("#buttonMoveUp").click(function() {
         $("#galleryImg8").animate( {
             marginTop: "0px",
         }, 2000);
