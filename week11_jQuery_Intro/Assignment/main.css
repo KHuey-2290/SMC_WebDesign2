@@ -54,18 +54,28 @@ h3 {
 .gallery-container {
     margin: 50px auto;
     box-sizing: border-box;
-    max-height: 500px;
     width: 90%;
 
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
     justify-items: center;
-    align-items: center;
 
     background-color: rgb(90, 198, 235);
     border: solid 2px midnightblue;
     border-radius: 10px;
+}
+
+.container-1 {
+    align-items: center;
+}
+
+.container-2 {
+    align-items: start;
+}
+
+#galleryImg8 {
+    align-self: start;
 }
 
 .img-button-box {

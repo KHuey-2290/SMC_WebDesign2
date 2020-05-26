@@ -1,3 +1,10 @@
+var galContainer1 = document.getElementById("galContainer1");
+var galContainer2 = document.getElementById("galContainer2");
+
+galContainer1.style.display = "none";
+galContainer2.style.display = "none";
+
+
 $(document).ready(function () {
     //Buttons in header
     $("#hipsterVeniceButton").click(function() {
@@ -72,7 +79,7 @@ $(document).ready(function () {
     // Buttons for image 8
     $("#buttonMoveDown").click(function(){
         $("#galleryImg8").animate( {
-            marginTop: "100px",
+            marginTop: "200px",
         }, 2000);
     });
 
