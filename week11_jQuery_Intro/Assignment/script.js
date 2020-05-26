@@ -1,10 +1,24 @@
 $(document).ready(function () {
     //everything should go in here!!!
+    $("#hipsterVeniceButton").click(function(){
+        $(".container-1").toggle();
+        $(".container-2").hide();
+    })
+
+    $("#touristVeniceButton").click(function(){
+        $(".container-2").toggle();
+        $(".container-1").hide();
+    })
+
+})//end of document ready
+
+$(document).ready(function () {
+    //everything should go in here!!!
     $("#clickB").click(function () {
       $(".long-ps").append(
         '<p class="long-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nostrum aut dolore voluptatibus distinctio, tempore obcaecati at illum earum libero eaque, possimus blanditiis dolorum cumque. Quia atque earum laudantium aliquid!</p>'
         );
-    });
+    })
 
     $("#clickR").click(function () {
       $('.long-paragraph').remove();
@@ -39,5 +53,4 @@ $(document).ready(function () {
         marginBottom: "657px"
       }, 2000);
     })//end of customAnim click
-
-  })//end of document ready
+})
