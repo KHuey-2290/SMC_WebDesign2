@@ -1,4 +1,4 @@
-// autocomplete widget
+// Autocomplete Widget
 $( function() {
     var availableTags = [
         "ActionScript",
@@ -25,14 +25,14 @@ $( function() {
         "Scheme"
     ];
 
-    $( "#tags" ).autocomplete({
+    $( "#choices" ).autocomplete({
         source: availableTags
     });
 } );
 
 // accordion widget
 $( function() {
-    $( "#accordion" ).accordion({
+    $( "#accordionWidget" ).accordion({
         heightStyle: "content",
         collapsible: true
     });
