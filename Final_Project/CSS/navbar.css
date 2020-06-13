@@ -1,16 +1,27 @@
 /* Responsive Smaller Phone Screens */
-nav {
+header {
     width: 100%;
+    height: 85px;
 }
 
 .flex-navbar {
     display: flex;
-    flex-direction: row;
-    max-height: 150px;
+    flex-direction: column;
 }
 
-.flex-navbar #myFlexNavbarLinks,#mySMIconsBox {
+.flex-navbar-mobile,.button-navbar-box-1 {
+    flex-direction: row;
+}
+
+.flex-navbar-mobile {
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#myFlexNavbarLinks,#mySMIconsBox {
     flex-direction: column;
+    border-top: 1px solid rgb(82, 189, 235);
+    border-bottom: 1px solid rgb(82, 189, 235);
 }
 
 .logo-box {
@@ -21,21 +32,43 @@ nav {
     width: 100%;
 }
 
-.button-box-1 {
+.button-navbar-box-1 {
     width: 20%;
     height: 20%;
+    justify-content: space-evenly;
 }
+
 button {
     border: none;
     background-color: white;
+    width: 45%;
 }
 
-.button-box-1 button img {
-    width: 45%;
+.button-navbar-box-1 button img {
+    width: 100%;
 }
 
 #mySMIconsBox img {
     width: 5%;
+    padding: 10px 10px 0px;
+}
+
+#mySMIconsBox {
+    padding-bottom: 10px;
+}
+
+#mySMIconsBox,#myFlexNavbarLinks {
+    box-sizing: border-box;
+}
+
+#mySMIconsBox a, nav a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(20, 20, 20);
+}
+
+#mySMIconsBox a {
+    font-size: 12px;
 }
 
 nav ul {
@@ -46,7 +79,15 @@ nav ul {
 
 nav ul li {
     padding: 10px;
-    text-align: center;
+}
+
+#mySMIconsBox a:hover {
+    background-color: rgb(82, 189, 235);
+
+}
+
+nav ul li:hover {
+    background-color: rgb(82, 189, 235);
 }
 
 /* Responsive Medium Tablet Screens */
