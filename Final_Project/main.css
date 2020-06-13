@@ -1,2 +1,6 @@
 @import url("CSS/navbar.css");
 @import url("CSS/layout.css");
+
+body {
+    margin: 0px;
+}

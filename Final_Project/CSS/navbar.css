@@ -1,0 +1,48 @@
+/* Responsive Smaller Phone Screens */
+nav {
+    width: 100%;
+}
+
+.flex-navbar {
+    display: flex;
+}
+
+.logo-container {
+    width: 33%;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+#flexNavbar {
+    flex-direction: column;
+}
+
+/* Responsive Medium Tablet Screens */
+@media (min-width: 520px) {
+
+}
+
+/* Responsive Large Laptop Screens */
+@media (min-width: 768px) {
+
+}
+
+/* Respsonsive Larger Desktop Screens */
+@media (min-width: 960px) {
+    
+}
