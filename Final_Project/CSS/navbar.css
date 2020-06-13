@@ -1,7 +1,7 @@
 /* Responsive Smaller Phone Screens */
 header {
     width: 100%;
-    height: 85px;
+    background-color: whitesmoke;
 }
 
 .flex-navbar {
@@ -22,6 +22,7 @@ header {
     flex-direction: column;
     border-top: 1px solid rgb(82, 189, 235);
     border-bottom: 1px solid rgb(82, 189, 235);
+    background-color: whitesmoke;
 }
 
 .logo-box {
@@ -40,7 +41,7 @@ header {
 
 button {
     border: none;
-    background-color: white;
+    background-color: whitesmoke;
     width: 45%;
 }
 
@@ -48,17 +49,13 @@ button {
     width: 100%;
 }
 
-#mySMIconsBox img {
-    width: 5%;
-    padding: 10px 10px 0px;
-}
-
-#mySMIconsBox {
-    padding-bottom: 10px;
-}
-
 #mySMIconsBox,#myFlexNavbarLinks {
     box-sizing: border-box;
+}
+
+#mySMIconsBox img {
+    width: 5%;
+    padding: 5px 10px;
 }
 
 #mySMIconsBox a, nav a {
@@ -92,7 +89,13 @@ nav ul li:hover {
 
 /* Responsive Medium Tablet Screens */
 @media (min-width: 520px) {
+    .logo-box {
+        max-width: 250px;
+    }
 
+    #buttonSMToggle,#buttonNavbarToggle {
+        max-width: 45px;
+    }
 }
 
 /* Responsive Large Laptop Screens */
