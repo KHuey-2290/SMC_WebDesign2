@@ -5,17 +5,38 @@ nav {
 
 .flex-navbar {
     display: flex;
+    flex-direction: row;
+    max-height: 150px;
 }
 
-.logo-container {
+.flex-navbar #myFlexNavbarLinks,#mySMIconsBox {
+    flex-direction: column;
+}
+
+.logo-box {
     width: 33%;
 }
 
-.logo-container img {
+.logo-box img {
     width: 100%;
 }
 
+.button-box-1 {
+    width: 20%;
+    height: 20%;
+}
+button {
+    border: none;
+    background-color: white;
+}
 
+.button-box-1 button img {
+    width: 45%;
+}
+
+#mySMIconsBox img {
+    width: 5%;
+}
 
 nav ul {
     padding: 0px;
@@ -26,10 +47,6 @@ nav ul {
 nav ul li {
     padding: 10px;
     text-align: center;
-}
-
-#flexNavbar {
-    flex-direction: column;
 }
 
 /* Responsive Medium Tablet Screens */
