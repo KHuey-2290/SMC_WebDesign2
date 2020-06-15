@@ -44,7 +44,7 @@ header {
     justify-content: space-evenly;
 }
 
-button {
+.flex-navbar button {
     border: none;
     background-color: whitesmoke;
     width: 45%;
