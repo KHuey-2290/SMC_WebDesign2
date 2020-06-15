@@ -2,6 +2,7 @@
 header {
     width: 100%;
     background-color: whitesmoke;
+    margin: auto;
 }
 
 .flex-navbar {
@@ -20,13 +21,17 @@ header {
 
 #myFlexNavbarLinks,#mySMIconsBox {
     flex-direction: column;
-    border-top: 1px solid rgb(82, 189, 235);
     background-color: whitesmoke;
     display: none;
 }
 
+#myFlexNavbarBox,#mySMIconsBox {
+    border-top: 1px solid rgb(82, 189, 235);
+}
+
 .logo-box {
     width: 33%;
+    max-width: 200px;
 }
 
 .logo-box img {
@@ -64,10 +69,6 @@ nav a {
     color: rgb(20, 20, 20);
 }
 
-#mySMIconsBox a {
-    font-size: 12px;
-}
-
 nav ul {
     padding: 0px;
     margin: 0px;
@@ -89,9 +90,6 @@ nav ul li:hover {
 
 /* Responsive Medium Tablet Screens */
 @media (min-width: 520px) {
-    .logo-box {
-        max-width: 250px;
-    }
 
     #buttonSMToggle,#buttonNavbarToggle {
         max-width: 45px;
@@ -102,19 +100,27 @@ nav ul li:hover {
     }
 
     #mySMIconsBox img {
-        width: 31px;
+        width: 24px;
     }
 }
 
 
 /* Responsive Large Laptop Screens */
-@media (min-width: 768px) {
+@media (min-width: 698px) {
     .flex-navbar {
         flex-direction: row;
     }
 
+    .logo-box {
+        width: 250px;
+    }
+
     .button-navbar-box-1 {
         display: none;
+    }
+
+    #myFlexNavbarBox,#mySMIconsBox {
+        border-top: none;
     }
 
     #myFlexNavbarLinks,#mySMIconsBox {
@@ -122,11 +128,26 @@ nav ul li:hover {
         flex-direction: row;
     }
 
+    #mySMIconsBox {
+        align-self: flex-end;
+        align-items: flex-end;
+        flex-grow: 2;
+        text-align: right;
 
+    }
+
+    nav a {
+        font-weight: bold;
+    }
+
+    #mySMIconsBox img {
+        width: 18px;
+        padding: 5px;
+    }
 }
 
 
 /* Respsonsive Larger Desktop Screens */
-@media (min-width: 960px) {
-    
+@media (min-width: 860px) {
+
 }
