@@ -13,56 +13,64 @@
 
 <body>
     <header class="flex-navbar">
-        <div class="flex-navbar flex-navbar-mobile">
-            <a href="../index.html" class="logo-box" id="myLogoBox">
-                <img src="../Assets/agi_logo.png" alt="American Geosciences Institute Logo" id="logoImg"/>
-            </a>
+        <div class="flex-navbar navbar-container">
+            <div class="flex-navbar flex-navbar-mobile">
+                <a href="../index.html" class="logo-box" id="myLogoBox">
+                    <img src="../Assets/agi_logo.png" alt="American Geosciences Institute Logo" id="logoImg"/>
+                </a>
+            
+                <div class="flex-navbar button-navbar-box-1" id="myNavbarButtons">
+                    <button id="buttonSMToggle">
+                        <img src="../Assets/share_icon.png" alt="Social media toggle button" id="toggleSMImg" />
+                    </button>
         
-            <div class="flex-navbar button-navbar-box-1" id="myNavbarButtons">
-                <button id="buttonSMToggle">
-                    <img src="../Assets/share_icon.png" alt="Social media toggle button" id="toggleSMImg" />
-                </button>
-    
-                <button id="buttonNavbarToggle">
-                    <img src="../Assets/menu_toggle.png" alt="hamburger navbar toggle button" id="toggleNavbarImg" />
-                </button>
+                    <button id="buttonNavbarToggle">
+                        <img src="../Assets/menu_toggle.png" alt="hamburger navbar toggle button" id="toggleNavbarImg" />
+                    </button>
+                </div>
             </div>
-        </div>
-
-        <nav class="flex-navbar" id="myFlexNavbarBox">
-            <ul class="flex-navbar" id="myFlexNavbarLinks">
-                <li> <a href="About.html">ABOUT</a> </li>
-                <li> <a href="Blog.html">BLOG</a> </li>
-                <li> <a href="Donate.html">DONATE</a> </li>
-            </ul>
-        </nav>
-
-        <div class="flex-navbar" id="mySMIconsBox">
-            <a href="https://www.facebook.com/americangeosciences" target="_blank" id="iconFacebook">
-                <img src="../Assets/facebook_icon.png" alt="AGI Facebook link"/> 
-            </a>
-
-            <a href="https://twitter.com/AGI_Updates" target="_blank" id="iconTwitter">
-                <img src="../Assets/twitter_icon.jpg" alt="AGI Twitter link"/> 
-            </a>
-
-            <a href="https://www.youtube.com/c/AmericanGeosciences" target="_blank" id="iconYoutube">
-                <img src="../Assets/youtube_icon.png" alt="AGI Youtube link"/> 
-            </a>
-
-            <a href="https://www.instagram.com/americangeosciences/" target="_blank" id="iconInstagram">
-                <img src="../Assets/instagram_icon.png" alt="AGI Instagram link"/> 
-            </a>
-
-            <a href="https://www.linkedin.com/company/the-american-geosciences-institute/" target="_blank" id="iconFacebook">
-                <img src="../Assets/linkedin_icon.png" alt="AGI Linkedin link"/> 
-            </a>
+    
+            <nav class="flex-navbar" id="myFlexNavbarBox">
+                <ul class="flex-navbar" id="myFlexNavbarLinks">
+                    <li> <a href="About.html">ABOUT</a> </li>
+                    <li> <a href="Blog.html">BLOG</a> </li>
+                    <li class="active-link"> <a href="Donate.html">DONATE</a> </li>
+                </ul>
+            </nav>
+    
+            <div class="flex-navbar" id="mySMIconsBox">
+                <a href="https://www.facebook.com/americangeosciences" class="sm-icons" id="iconFacebook">
+                    <img src="../Assets/facebook_icon.png" alt="AGI Facebook link"/> 
+                </a>
+    
+                <a href="https://twitter.com/AGI_Updates" class="sm-icons" id="iconTwitter">
+                    <img src="../Assets/twitter_icon.jpg" alt="AGI Twitter link"/> 
+                </a>
+    
+                <a href="https://www.youtube.com/c/AmericanGeosciences" class="sm-icons" id="iconYoutube">
+                    <img src="../Assets/youtube_icon.png" alt="AGI Youtube link"/> 
+                </a>
+    
+                <a href="https://www.instagram.com/americangeosciences/" class="sm-icons" id="iconInstagram">
+                    <img src="../Assets/instagram_icon.png" alt="AGI Instagram link"/> 
+                </a>
+    
+                <a href="https://www.linkedin.com/company/the-american-geosciences-institute/" class="sm-icons" id="iconFacebook">
+                    <img src="../Assets/linkedin_icon.png" alt="AGI Linkedin link"/> 
+                </a>
+            </div>
         </div>
     </header>
     
     <main></main>
 
-    <footer></footer>
+    <footer>
+        <div class="flex-footer footer-container">
+            <h3>The American Geosciences Institute (AGI) represents and serves the geoscience community by providing collaborative leadership and information to connect Earth, science, and people. <a href="https://www.americangeosciences.org/privacy-policy">Privacy Policy</a></h3>
+    
+            <p>Copyright © 2020. American Geosciences Institute. All rights reserved.</p>
+        </div> 
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>

@@ -1,0 +1,46 @@
+/* Responsive Smaller Phone Screens */
+footer {
+    margin-top: 50px;
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+footer p,h3 {
+    text-align: center;
+    padding: 20px;
+    font-weight: normal;
+}
+
+footer h3 {
+    font-size: 12px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+.footer-container {
+    margin: auto;
+}
+
+/* Responsive Medium Tablet Screens */
+@media (min-width: 520px) {
+
+}
+
+/* Responsive Large Laptop Screens */
+@media (min-width: 698px) {
+    .footer-container {
+        max-width: 700px;
+    }
+    
+}
+
+/* Respsonsive Larger Desktop Screens */
+@media (min-width: 960px) {
+    .footer-container {
+        max-width: 960px;
+        margin: auto;
+    }
+    
+}
