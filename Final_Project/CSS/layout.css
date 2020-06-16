@@ -132,17 +132,40 @@
         text-align: right;
     }
 
-    .for-container .about-section {
+    .for-container .home-section {
         padding-bottom: 0px;
     }
 
     /* About Page */
     .banner-container {
         width: 100%;
+        margin-bottom: 50px;
     }
 
     .banner-container img {
         width: 100%;
+    }
+
+    .about-flex {
+        display: flex;
+        flex-direction: column;
+        background-color: whitesmoke;
+    }
+
+    .about-flex img {
+        width: 100%;
+    }
+
+    .hide-img {
+        display: none;
+    }
+
+    .about-text {
+        margin-bottom: 75px;
+    }
+
+    .about-text p {
+        padding: 10px 30px;
     }
 
     /* Blog Page */
@@ -154,7 +177,8 @@
     }
 
     .engage-container h1 {
-        width: 100%;
+        width: 80%;
+        font-size: 28px;
     }
 
     .box-1 {
@@ -234,6 +258,7 @@
         margin: 0px;
     }
 
+    /* Donate Page:Choose fundraiser */
     .fund-container {
         padding: 0px 30px;
         margin-bottom: 50px;
@@ -251,6 +276,7 @@
         background-color: rgb(1, 85, 165);
     }
 
+    /* Donate Page:Payment */
     .selection-container {
         margin-bottom: 50px;
     }
@@ -329,6 +355,7 @@
         margin-left: 50%;
     }
 
+    /* Thank you page */
     .thank-you-page {
         margin: 50px auto;
         width: 65%;
@@ -391,10 +418,28 @@
         width: 90%;
         border-bottom: none;
     }
+
+    /* About Page */
+    .about-med-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .hide-img {
+        display: inline-block;
+    }
+
+    .about-med-container img {
+        width: 40%;
+        padding-left: 30px;
+    
+    }
 }
 
 /* Responsive Large Laptop Screens */
 @media (min-width: 768px) {
+    /* HomPage */
     .home-flex-lrg-container {
         display: flex;
         flex-direction: row;
@@ -420,7 +465,7 @@
 
 /* Respsonsive Larger Desktop Screens */
 @media (min-width: 960px) {
-    .slideshow-container,.for-container,.home-flex-lrg-container {
+    .slideshow-container,.for-container,.home-flex-lrg-container,.about-flex {
         max-width: 960px;
         margin: auto;
     }

@@ -11,3 +11,7 @@ body {
     color: rgb(1, 85, 165);
     background-color: rgb(82, 189, 235);
 }
+
+main {
+    background-color: whitesmoke;
+}
