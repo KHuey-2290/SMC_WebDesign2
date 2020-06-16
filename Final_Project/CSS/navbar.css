@@ -140,7 +140,6 @@ nav ul li:hover {
     }
 
     #mySMIconsBox {
-        padding-left: 5%;
         align-self: flex-start;
         flex-grow: 2;
         text-align: right;
