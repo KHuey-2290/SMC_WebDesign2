@@ -1,3 +1,8 @@
+// Donate Page
+var thankYouPage = document.getElementById("thankYouPage");
+
+thankYouPage.style.display = "none";
+
 // Navbar JS
 $(document).ready(function () {
     //Buttons in header
@@ -7,6 +12,12 @@ $(document).ready(function () {
 
     $("#buttonNavbarToggle").click(function() {
         $("#myFlexNavbarLinks").toggle();
+    });
+
+    //Thank you button
+    $("#completeButton").click(function() {
+        $("#thankYouPage").show();
+        $(".donate-container").hide();
     });
 });
 
@@ -39,3 +50,8 @@ function showSlides(n) {
     mySlides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+// Donate Page
+var thankYouPage = document.getElementById("thankYouPage");
+
+thankYouPage.style.display = "none";

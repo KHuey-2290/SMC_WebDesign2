@@ -166,7 +166,7 @@ nav ul li:hover {
 /* Respsonsive Larger Desktop Screens */
 @media (min-width: 960px) {
     .navbar-container {
-        max-width: 960px;
+        max-width: 1050px;
         margin: auto;
     }
 }

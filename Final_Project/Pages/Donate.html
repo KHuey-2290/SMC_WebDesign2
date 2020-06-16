@@ -69,7 +69,7 @@
     
                 <p>AGI is proud that we have hundreds of loyal and generous donors supporting the power of the geosciences around the country and all over the world. It's because of donors like you that we're able to support many critical projects advancing the geosciences in local communities across the country! Your generous gifts help AGI bring the geosciences to local and international communities, provide the latest educational materials to K-12 teachers nationwide, discover new employment trends for geoscience graduates, and help more graduate students experience AGI internships. You can help in a variety of meaningful ways.</p>
                     
-                <p>Please consider donating to one of AGI's designated funds.</p>
+                <h3>Please consider donating to one of AGI's designated funds:</h3>
             </div>
 
             <div class="fund-container">
@@ -92,85 +92,85 @@
                 <h2>Select an Amount</h2>
 
                 <div class="amount-button-container">
-                    <button class="amount-button">$5</button>
-                    <button class="amount-button">$15</button>
-                    <button class="amount-button">$25</button>
-                    <button class="amount-button">$50</button>
-                    <button class="amount-button">$100</button>
+                    <a><button class="amount-button">$5</button></a>
+                    <a><button class="amount-button">$15</button></a>
+                    <a><button class="amount-button">$25</button></a>
+                    <a><button class="amount-button">$50</button></a>
+                    <a><button class="amount-button">$100</button></a>
                 </div>
             </div>
 
             <div class="form-container">
                 <h2>Payment Method:</h2>
 
-                <div>
-                    <button class="pay-button">Debit/Credit Card</button>
-                    <button class="pay-button">Paypal</button>
+                <div class="form-payment">
+                    <div class="pay-container">
+                        <button class="pay-button">Debit/Credit Card</button>
+                        <button class="pay-button">Paypal</button>
+                    </div>
+    
+                    <form action="action_page.php" method="POST">
+                        <label for="fn">Cardholder's Name:</label>
+                        <input type="text" class="f-name" id="fn" name="fullname" placeholder="Full Name on Card">
+                                          
+                        <label for="cn">Credit Card Number</label>
+                        <input type="text" class="card-number" id="cn" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
+    
+                        <label for="dateSelect">Expiration Date:</label>
+                        <select id="dateSelect">
+                            <option>Month</option>
+                            <option value="january">01</option>
+                            <option value="february">02</option>
+                            <option value="march">03</option>
+                            <option value="april">04</option>
+                            <option value="may">05</option>
+                            <option value="june">06</option>
+                            <option value="july">07</option>
+                            <option value="august">08</option>
+                            <option value="september">09</option>
+                            <option value="october">10</option>
+                            <option value="november">11</option>
+                            <option value="december">12</option>
+                        </select>
+    
+                        <select id="dateSelect">
+                            <option>Year</option>
+                            <option value="year1">2020</option>
+                            <option value="year2">2021</option>
+                            <option value="year3">2022</option>
+                            <option value="year4">2023</option>
+                            <option value="year5">2024</option>
+                            <option value="year6">2025</option>
+                            <option value="year7">2026</option>
+                            <option value="year8">2027</option>
+                            <option value="year9">2028</option>
+                            <option value="year10">2029</option>
+                            <option value="year11">2030</option>
+                        </select>
+    
+                        <label for="sc">Security Code</label>
+                        <input type="number" name="cvv" class="n-input" id="sc" placeholder="CVV">
+                    
+                        <label for="ea">Email Address</label>
+                        <input type="email" name="email" class="e-input" id="ea" id="EmailAddress" placeholder="jane_joe@gmail.com">
+                    </form>
                 </div>
-
-                <form action="action_page.php" method="POST">
-                    <label for="fn">Cardholder's Name:</label>
-                    <input type="text" class="f-name" id="fn" name="fullname" placeholder="Full Name on Card">
-                                      
-                    <label for="cn">Credit Card Number</label>
-                    <input type="text" class="card-number" id="cn" name="cardnumber" placeholder="XXXX-XXXX-XXXX-XXXX">
-
-                    <label for="groupSelect">Expiration Date:</label>
-                    <select id="groupSelect">
-                        <option>Month</option>
-                        <option value="january">01</option>
-                        <option value="february">02</option>
-                        <option value="march">03</option>
-                        <option value="april">04</option>
-                        <option value="may">05</option>
-                        <option value="june">06</option>
-                        <option value="july">07</option>
-                        <option value="august">08</option>
-                        <option value="september">09</option>
-                        <option value="october">10</option>
-                        <option value="november">11</option>
-                        <option value="december">12</option>
-                    </select>
-
-                    <select id="groupSelect">
-                        <option>Year</option>
-                        <option value="year1">2020</option>
-                        <option value="year2">2021</option>
-                        <option value="year3">2022</option>
-                        <option value="year4">2023</option>
-                        <option value="year5">2024</option>
-                        <option value="year6">2025</option>
-                        <option value="year7">2026</option>
-                        <option value="year8">2027</option>
-                        <option value="year9">2028</option>
-                        <option value="year10">2029</option>
-                        <option value="year11">2030</option>
-                    </select>
-
-                    <label for="sc">Security Code</label>
-                    <input type="number" name="cvv" class="n-input" id="sc" placeholder="CVV">
+                </div>
                 
-                    <label for="ea">Email Address</label>
-                    <input type="email" name="email" class="e-input" id="ea" id="EmailAddress" placeholder="jane_joe@gmail.com">
-                </form>
-            </div>
 
-            <button id="completeButton">Complete Payment</button>
+            <div class="complete-button-box">
+                <button id="completeButton">Complete Payment</button>
+            </div>
         </div>
 
-        <div class="thank-you-page">
-            <div class="schist-box">
+        <div id="thankYouPage" class="thank-you-page">
                 <img src="../Assets/thank-you-img.jpg" alt="You're the Schist! (Image of schist rock.)" />
-
-                <h1>You're the Schist!</h1>
-            </div>
 
             <div class="text-box">
                 <h1>Thank You For Your Contributon!</h1>
 
                 <h3>Your receipt is being mailed to the email you provided. Please keep it for your records.</h3>
             </div>
-
         </div>
     </main>
 
