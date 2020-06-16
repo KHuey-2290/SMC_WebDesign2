@@ -63,6 +63,10 @@ header {
     padding: 5px 10px;
 }
 
+#mySMIconsBox a {
+    text-decoration: none;
+}
+
 nav a {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
@@ -85,7 +89,6 @@ nav ul li {
 
 #mySMIconsBox a:hover {
     background-color: rgb(82, 189, 235);
-
 }
 
 nav ul li:hover {
