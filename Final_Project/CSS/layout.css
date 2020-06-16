@@ -225,6 +225,7 @@
         font-size: 16px;
         font-weight: 550;
         padding: 0px 30px 10px;
+        color: rgb(1, 133, 63);
     }
 
     .engage-box button {
@@ -364,7 +365,7 @@
 
     /* Thank you page */
     .bg-height {
-        min-height: 800px;
+        min-height: 1000px;
         display: flex;
         justify-content: center;
         align-items: center;

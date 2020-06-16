@@ -2,13 +2,15 @@
 footer {
     margin-top: 50px;
     margin: 0px;
+    padding: 20px 0px;
     background-color: whitesmoke;
 }
 
 footer p,h3 {
     text-align: center;
-    padding: 20px;
+    padding: 10px 20px;
     font-weight: normal;
+    color: rgb(1, 85, 165);
 }
 
 footer h3 {
@@ -16,7 +18,9 @@ footer h3 {
 }
 
 footer p {
+    margin: 0px;
     font-size: 10px;
+
 }
 
 .footer-container {
